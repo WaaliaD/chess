@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #d9d9d9;
+    user-select: none;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #8d5d2d;
+}
+
+.board {
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.cell {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:hover {
+    background-color: #3fdc79;
+}
+
+.cell img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
+.black {
+    background-color: #b58863;
+}
+
+.white {
+    background-color: #f0d9b5;
+}
+
+.selected {
+    background-color: #34b763;
+}
+
+.available {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #34b763;
+}
+
+.lost {
+    height: calc(64px * 4 - 60px);
+    width: calc(64px * 4);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: #6b4623;
+    border: 1px solid black;
+}
+
+.lost-title {
+    margin-left: 50px;
+}
+
+.lost > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.warning {
+    background: #872727;
+}
+
+.timer {
+    margin-right: 50px;
+}
+
+.timer button {
+    border: 0;
+    border-radius: 5px;
+    background: #462e17;
+    padding: 8px 16px;
+    font-size: 16px;
+}
